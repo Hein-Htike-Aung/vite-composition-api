@@ -43,6 +43,7 @@ watch(name, (newVal) => {
 });
 
 onMounted(() => {
+  console.log('mounted')
   name.value = localStorage.getItem("name") || "";
   todos.value = JSON.parse(localStorage.getItem("todos")) || [];
 });
